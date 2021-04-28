@@ -1,0 +1,33 @@
+### 
+GET http://localhost:3000/api/auth
+
+###
+GET  http://localhost:3000/api/auth/profile
+
+
+###
+POST   http://localhost:3000/api/auth/signup
+content-type: application/json
+
+{
+    "username":"tovar",
+    "email":"tovar@tovar.com",
+    "password":"1234"
+}
+###
+POST   http://localhost:3000/api/auth/signin
+content-type: application/json
+
+{
+    "email":"tovar@tovar.com",
+    "password":"1234"
+}
+###
+GET    http://localhost:3000/api/auth/profile
+content-type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg4ZWU1NGViMGMyODMyYWM1NGI0YTkiLCJpYXQiOjE2MTk1OTA5OTEsImV4cCI6MTYxOTU5NDU5MX0.QfQfbFGwqmrX7bqNouQ7Y349nklM8d0nZXoWrZfv-LU
+
+{
+    "email":"tovar@tovar.com",
+    "password":"1234"
+}
