@@ -4,7 +4,12 @@ GET http://localhost:3000/api/auth
 ###
 GET  http://localhost:3000/api/auth/profile
 
-
+###
+GET http://localhost:3000/api1/movies
+###
+GET http://localhost:3000/api1/movies/b
+###
+GET http://localhost:3000/api1/movies/batman
 ###
 POST   http://localhost:3000/api/auth/signup
 content-type: application/json
@@ -31,3 +36,22 @@ auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg4ZWU1NGViMGMyODM
     "email":"tovar@tovar.com",
     "password":"1234"
 }
+###
+GET http://localhost:3000/api2/movies/b
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg4ZWU1NGViMGMyODMyYWM1NGI0YTkiLCJpYXQiOjE2MTk2MDA5MDIsImV4cCI6MTYxOTYwNDUwMn0.uMtuTXiSn6JR3wT6qVcfr6B0psG7ZnLPnpWCEG1V6o4
+###
+GET http://localhost:3000/api2/movies/batman
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg4ZWU1NGViMGMyODMyYWM1NGI0YTkiLCJpYXQiOjE2MTk2MDA5MDIsImV4cCI6MTYxOTYwNDUwMn0.uMtuTXiSn6JR3wT6qVcfr6B0psG7ZnLPnpWCEG1V6o4
+###
+GET http://localhost:3000/api3/random
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg4ZWU1NGViMGMyODMyYWM1NGI0YTkiLCJpYXQiOjE2MTk2MDYwMTQsImV4cCI6MTYxOTYwOTYxNH0.cvWKqAW1nt-m7I31mFLFpolmsBxW11K31RQYODXONzI
+
+###
+GET http://www.omdbapi.com/?i=tt3896198&apikey=521aa8b2
+
+###
+GET http://www.omdbapi.com/?apikey=521aa8b2&type=movie&t=a
+###
+GET http://www.omdbapi.com/?apikey=521aa8b2&S=b
+###
+GET http://www.omdbapi.com/?apikey=521aa8b2&S=batman
